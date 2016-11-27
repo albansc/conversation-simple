@@ -4,12 +4,13 @@ declared-services:
     label: conversation
     plan: free
 applications:
-- name: conversation-simple
+- name: alban
   command: npm start
   path: .
   memory: 256M
   instances: 1
   services:
-  - conversation-simple-demo-test1
+  - Conversation-5i
   env:
     NPM_CONFIG_PRODUCTION: false
+    WORKSPACE_ID: 3e79dcb2-6425-4db6-89eb-b76dd1d6ccbd
